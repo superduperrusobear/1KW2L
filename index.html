@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000 Ways to Lose - Crypto Edition</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="images/logo.png" alt="1000 Ways to Lose Logo" class="header-logo">
+                <div class="social-icons">
+                    <a href="https://twitter.com/1000WaysToLose" target="_blank" class="social-icon">
+                        <img src="images/x-0muuxjzgzvtlpaduv3p4k2s.webp" alt="X Logo" class="header-x-logo">
+                    </a>
+                    <a href="https://t.me/thousandwaystolose" target="_blank" class="social-icon">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="stories-container" id="storiesContainer">
+            <!-- Stories will be dynamically loaded here -->
+        </div>
+
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <button class="fab-button">
+            <div class="fab-icon">
+                <i class="fas fa-plus"></i>
+            </div>
+            <span class="fab-label">Share Your Loss</span>
+        </button>
+
+        <div class="loading-indicator">
+            <div class="spinner"></div>
+            <p>Loading more pain... 😅</p>
+        </div>
+
+        <!-- Share Loss Modal -->
+        <div class="share-loss-modal" id="shareLossModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Share Your Loss</h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <textarea 
+                        id="lossMessage" 
+                        maxlength="75" 
+                        placeholder="Describe your crypto loss in 75 characters..."></textarea>
+                    <div class="character-count">
+                        <span id="charCount">75</span> characters remaining
+                    </div>
+                    <button class="share-to-twitter">
+                        <img src="images/x-0muuxjzgzvtlpaduv3p4k2s.webp" alt="X Logo" class="x-logo">
+                        Share to X
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="stories.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
